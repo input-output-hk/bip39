@@ -1,10 +1,13 @@
-# BIP39
+# isomorphic-bip39
 
 [![Build Status](https://travis-ci.org/bitcoinjs/bip39.png?branch=master)](https://travis-ci.org/bitcoinjs/bip39)
 [![NPM](https://img.shields.io/npm/v/bip39.svg)](https://www.npmjs.org/package/bip39)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
+Makes [bip39](https://github.com/bitcoinjs/bip39) package isomorphic by adding `Buffer` [polyfill](https://www.npmjs.com/package/buffer). Still uses `Buffer` from standard library in node.js.
+
+---
 
 JavaScript implementation of [Bitcoin BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
 
@@ -90,7 +93,7 @@ undefined
 
 ## Installation
 ``` bash
-npm install bip39
+npm install isomorphic-bip39
 ```
 
 ## Examples
@@ -125,7 +128,7 @@ bip39.validateMnemonic('basket actual')
 
 
 ``` js
-const bip39 = require('bip39')
+const bip39 = require('isomorphic-bip39')
 
 // defaults to BIP39 English word list
 // uses HEX strings for entropy
